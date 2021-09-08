@@ -2,51 +2,70 @@
 /* All comments go between the front slash and asterisk symbols */
 
 body {
-	background-color: #0014FB;   /* background color */
+	margin-top: 0px;
+	padding-top: 10px;
+	background-color: #0055A2;   /* background color */
 	color: #FFFFFF;          /* text color for the entire page */
-	font-size: 12px;
+	font-size: 16px;		/* global text size */
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-h1 { 
+h1, h2 { 
 	text-align:center;     /* centers h1 and h2 content */
 }
 
-h2 { 
-	text-align:center;     /* centers h1 and h2 content */
+h1 {
+	font-size: 40px;
 }
+
 
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
-	width:900px;
-	margin:0 auto;    /* centers wrapper */
+	width: 900px;
+	margin: 0 auto;    /* centers wrapper */
 }
 
 /* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
 .stepTitle{
-	padding:4px;
-	text-align:left;
-	font-size:16px;
-	background-color:#EAFF4F;
+	padding: 20px;
+	padding-top: 20px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	background-color:#E5A823;
  }
 
 .stepContent{ 
 	background-color: #FFFFFF;
-	padding:7px;
+	padding: 7px;
 	display: flex;
 	justify-content: center;
 	text-decoration-color: black;
 }
 
 .stepDescription {
+	float: left;
     width: 55%;
     padding: 5px;
     text-decoration-color: black;
+	line-height: 1.25em;
+	font-size: 1em;
     color: #000000;
 }
 
 .stepImage {
-	width:40%;	
-	padding:5px;
+	width: 40%;	
+	padding: 10px;
 	text-align: center;
+	
+}
+
+/* mobile responsive images */
+.responsive {
+	width: 100%;
+	padding: 50px 10px 50px 50px;
+	float: right;
+	text-align: center;
+	max-width: 270px;
+	height: auto;
 }
