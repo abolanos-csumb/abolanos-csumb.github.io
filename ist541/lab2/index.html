@@ -13,6 +13,7 @@
 	
 	
 <body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
 	<div id="wrapper">
 	<div id="header">
 		<h1> Logging into Qualtrics Through One.SJSU</h1>
@@ -20,7 +21,7 @@
 	</div>	
 	
 	<div id="step1">
-	  <details>
+	  <details open>
 		<summary class="stepTitle">
 			Step 1: Signing into One.SJSU
 		</summary>
@@ -75,7 +76,7 @@
 				</ol>
 				
 				<br />
-				<p><a href id="#top1">Return to Top of Page</a></p>
+				
 			</div><!--stepDescriptionEnd-->
 			
 			<div class="responsive">
@@ -118,8 +119,8 @@
 				<p>In this case, I will be pushing to a selected mobile device with the DUO MFA application connected to SJSU.</p>
 				<p>You can also click on settings on this screen and select it to automatically push to DUO MFA automatically without having to click on the button.</p>
 				
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				<p><a href id="#top2">Return to Top of Page</a></p>
+				<br /><br /><br /><br /><br /><br /><br /><br />
+				
 				
 			</div><!--stepDescriptionEnd-->
 			
@@ -161,11 +162,6 @@
 				</p>
 				
 				
-				
-				
-				
-				<p><a href id="#top3">Return to Top of Page</a></p>
-				
 			</div><!--stepDescriptionEnd-->
 			
 			<div class="stepImage">
@@ -196,8 +192,7 @@
 				
 				
 				<br /><br /><br />
-				<p><a href id="#top4">Return to Top of Page</a></p>
-				
+								
 			</div><!--stepDescriptionEnd-->
 			
 			<div class="responsive">
@@ -231,7 +226,7 @@
 				
 				
 				<br /><br /><br />
-				<p><a href id="#top5">Return to Top of Page</a></p>
+				
 				
 			</div><!--stepDescriptionEnd-->
 			
@@ -250,7 +245,8 @@
 	
   </div> <!--closes wrapper-->
 	
-	<script>
+	<!--Scroll to Top Button Script-->
+	<script> 
 	
 		// Get the modal
 		var modal = document.getElementById("myModal");
@@ -274,6 +270,29 @@
 		}
 	
 	</script>
+	
+	
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 	
 </body>
 
