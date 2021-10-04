@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>A. Bola&ntilde;os Lab 5 - Q2: Updating Content Using Javascript and jQuery</title>
+	<link href="../lab5/css/trini.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<script>
+		$(function(){
+			$("#option1").click( function(){
+				$("#feedback").html("<h2 style='color:red'> This looks correct, but this isn't how we pronounce her name. </h2>");
+				$("#trini_gate").css("display","inline");
+				$("#trini_csuci").css("display","none");
+			});
+			
+			$("#option2, #option4").click( function(){ $("#feedback").html("<h2 style='color:red'> Looks right, but it isn't, sorry. </h2>");
+			$("#trini_gate").css("display","inline");
+			$("#trini_csuci").css("display","none");
+			});
+			
+			$("#option3").click( function(){ $("#feedback").html("<h2 style='color:green'> Correct! Trini's name sounds like &#34;tree-knee&#34;. <br />(click play to hear her name)</h2><audio controls><source src=\"../lab5/audio/Trini.mp3\" type=\"audio/mpeg\"> Your browser does not support the audio element. </audio>");
+			$("#trini_csuci").css("display","inline");
+			$("#trini_gate").css("display","none")
+		    });
+			
+			
+		});
+	</script>
+	
+</head>
+
+<body>
+	<br /><br />
+	<a href="../lab5/question1.html">Question 1</a>
+	<a href="../lab5/question2.html">Question 2</a>
+	<br />
+	<br />
+	<hr />
+	<div id="wrapper">
+		<h1>How do you pronounce Trini's name?</h1>
+		<h3>Click on one of the following choices</h3>
+		<h2 id="option1" class="choices"> try-nye </h2>
+		<h2 id="option2" class="choices"> tre-ne </h2>
+		<h2 id="option3" class="choices"> tree-knee </h2>
+		<h2 id="option4" class="choices"> ree-ny </h2>
+		<div id="feedback"></div>
+		<img id="trini_gate" src="../lab5/img/TriniGoldenGate.jpg" alt="Trini going over the Golden Gate Bridge."/>
+		<img id="trini_csuci" src="../lab5/img/TriniCSUCI.jpg" alt="Trini on the CSU Channel Islands campus."/>
+	</div>
+	
+	
+	
+</body>
+</html>

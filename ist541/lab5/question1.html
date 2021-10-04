@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>A. Bola&ntilde;os Lab 5 - Q1: Updating Content Using Javascript and jQuery</title>
+	<link href="../lab5/css/trini.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<script>
+		$( function(){
+			$("#trini_image").mouseenter( function(){
+				$("#trini_winter").css("display","inline");
+				$("#trini_image").css("display","none");
+				$("#answer").html("<h2>Yes she does. She loves wearing her red knitted with pompom muffler during the winter!</h2>");
+			});
+			
+			$("#trini_winter").mouseleave( function(){
+				$("#trini_image").css("display","inline");
+				$("#trini_winter").css("display","none");
+				$("#answer").html("");
+			});
+			
+			
+			});
+	</script>
+	
+</head>
+
+<body>
+	<br /><br />
+	<a href="../lab5/question1.html">Question 1</a>
+	<a href="../lab5/question2.html">Question 2</a>
+	<br />
+	<br />
+	<hr />
+	<div id="wrapper">
+		<h1>Does Trini have a winter muffler?</h1>
+		<h3 id="hint">Hint: Hover over the image below to find out!</h3>
+		<img id="trini_image" src="../lab5/img/TriniValentinesDayScarf.jpg" alt="Trini in Valentines Day Scarve." />
+		<img id="trini_winter" src="../lab5/img/TriniWinterScarf.jpg"  alt="Trini in her winter muffler." />
+		<div id="answer"></div>
+	</div>
+	<!-- closing “wrapper” -->
+	
+	
+	
+	
+</body>
+</html>

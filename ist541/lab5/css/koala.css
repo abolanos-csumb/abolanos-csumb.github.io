@@ -1,0 +1,20 @@
+/* CSS Document */
+
+#wrapper {
+width: 900px;
+margin: 0 auto;
+text-align: center;
+}
+
+#koala_image {
+border: black 5px solid;
+}
+
+#koala_eating {
+display: none;
+border: black 5px solid;
+}
+
+.choices {
+cursor: pointer;
+}

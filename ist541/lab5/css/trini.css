@@ -1,0 +1,78 @@
+/* CSS Document */
+
+
+body {
+	
+	max-width:1200px;
+	width:95%;
+	text-align: center;
+	background-image: url("../img/AdobeStock_92606763.jpeg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 2200px;
+	position: relative;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;	
+	
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#trini_image {
+	border: #C87F8C 5px solid;
+}
+
+#trini_gate {
+	
+	border: #C87F8C 5px solid;
+}
+
+#trini_csuci {
+	display: none;
+	border: #C87F8C 5px solid;
+}
+
+
+#trini_winter {
+	display: none;
+	border: black 5px solid;
+}
+
+.choices {
+	cursor: pointer;
+}
+
+a {
+	
+	padding: 15px;
+	margin: 10px;
+	font-size: 125%;
+	background-color: #DD32F0;
+	color: #FFFFFF;
+	
+}
+
+a:hover {
+	
+	font-size: 100%;
+	background-color: aliceblue;
+	color: #DD32F0;
+	
+}
+
+hr {
+	
+	background-color: #DD32F0;
+	
+	
+}
