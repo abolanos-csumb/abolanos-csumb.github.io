@@ -1,0 +1,51 @@
+body {
+	
+	text-align: center;
+	background-color: #0055A2;
+	
+}
+
+a {
+	
+	padding: 15px;
+	margin: 3px;
+	font-size: 125%;
+	background-color: #E5A823;
+	color: #0055A2;
+	
+}
+
+a:hover {
+	
+	font-size: 100%;
+	background-color: aliceblue;
+	color: #0055A2;
+	
+}
+
+h1, h2 {
+	
+	color: #E5A823;
+	
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto 0 auto;
+    /* centers wrapper */
+    background: white;
+    /* background color */
+    text-align: center;
+    /* centers wrapper content */
+    border-style: solid;
+}
+
+.important {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.blue {
+    color: blue;
+}
+
